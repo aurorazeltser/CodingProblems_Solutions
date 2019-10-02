@@ -1,0 +1,7 @@
+n=int(input())
+if n%2!=0:
+    print(0)
+else:
+    d=n//2
+    c=2**d
+    print(c)
