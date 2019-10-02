@@ -1,0 +1,12 @@
+s=str(input())
+t=str(input())
+if len(s)!=len(t):
+    print("No")
+else:
+    v='aeiou'
+    r="Yes"
+    for x in range(len(s)):
+        if bool(s[x] in v)!=bool(t[x] in v):
+            r="No"
+            break
+    print(r)
