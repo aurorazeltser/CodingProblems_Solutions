@@ -1,0 +1,16 @@
+n=int(input())
+def sum_digits(x):
+    s=0
+    while x>0:
+        s+=x%10
+        x//=10
+    return s 
+m=n-9*(len(str(n)))
+l=[]; k=0
+for x in range(max(m,0),n):
+    s=x+sum_digits(x)
+    if s==n:
+        l.append(x); k+=1 
+print(k)
+for e in l:
+    print(e)
