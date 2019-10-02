@@ -1,0 +1,15 @@
+q=int(input())
+def toPrint(a):
+    print("YES")
+    print(2)
+    print(a[0],a[1:])
+for _ in range(q):
+    n=int(input())
+    s=str(input())
+    if n!=2:
+        toPrint(s)
+    else:
+        if s[1]>s[0]:
+            toPrint(s)
+        else:
+            print("NO")
